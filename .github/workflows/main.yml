@@ -1,0 +1,8 @@
+name: Main
+on:
+  push:
+    branches:
+      - main
+jobs:
+  main:
+    uses: lacarvalho91/github-actions-workflow-playground/.github/workflows/main.yml@main
