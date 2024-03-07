@@ -1,0 +1,10 @@
+name: Extended Test
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '*/5 * * * *'
+jobs:
+  main:
+    uses: lacarvalho91/github-actions-playground/.github/workflows/main.yml@main
+    with:
+      repo-token: ${{ secrets.GITHUB_TOKEN }}
