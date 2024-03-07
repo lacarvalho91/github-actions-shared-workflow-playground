@@ -3,6 +3,7 @@ on:
   push:
     branches:
       - main
+  workflow_dispatch:
 jobs:
   main:
     uses: lacarvalho91/github-actions-workflow-playground/.github/workflows/main.yml@main
